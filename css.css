@@ -1,0 +1,922 @@
+ /* Global styles */
+	
+		    /* update------------------------ */
+	.menu{
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    menu a:hover {
+      color: green;
+    }
+	
+	/* Styles for user information */
+
+/*************************/
+
+    /* Hamburger menu styles */
+    .hamburger {
+      display: none; /* Hide the hamburger button by default on larger screens */
+    }
+
+    .menu {
+	  display:block;
+      top: 6%;
+    }
+
+    .menu.show-menu {
+      left: 0;
+    }
+
+    .menu li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    .menu li a {
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+.publish-button {
+  background-color: #2E6BFF;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+	
+	/********************************************************************************/
+	/* Reset default list styles */
+			.menu ul {
+			  margin: 0;
+			  padding: 0;
+			  list-style: none;
+			}
+
+			/* Display the list items horizontally */
+			.menu li {
+			  display: inline-block;
+			  margin-right: 20px; /* Add some space between the items */
+			}
+			
+			/* Style the anchor tags (links) */
+
+			
+			
+/* background:white;
+      color: white;*/
+/*****************************se connecter***************************************************/
+
+
+/* ********************************************* filtre menu *********************/ 
+
+/* Styles for the overlay */
+.search-form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure the overlay is on top of other content */
+}
+
+/* Styles for the form */
+.search-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 300px; /* Adjust width as needed */
+}
+
+/* Style for labels */
+.search-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style for inputs */
+.search-form input {
+  display: block;
+  width: 100%;
+  padding: 10px 0px 10px 2px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for button */
+.search-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #2E6BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for button on hover */
+.search-form button:hover {
+			  transform: scale(1.05); /* Add a slight scale effect on hover */
+
+}
+
+
+/* ********************************************* filtre menu *********************/ 
+
+
+
+
+/* Add styles for hover effect (optional) */
+.menu li a:hover {
+  background-color:white; /* Change the background color on hover */
+  color:black;
+	box-shadow:inset 0px 0px 15px 0px #2E6BFF;
+  transform: scale(1.10); /* Add a slight scale effect on hover */
+ transition: box-shadow 0.5s, color 0.1s;
+  border-radius: 5px; /* Add rounded corners for a nicer look */
+  color:#2E6BFF;
+}
+
+/* Add styles for the login icon */
+.menu li a i {
+  margin-right: 5px; /* Add some space between the icon and the text */
+}
+
+
+
+   
+
+    /* Hamburger icon - Default: hamburger (☰), Active: close (✕) */
+    .hamburger .icon-close {
+      display: none;
+    }
+
+    .hamburger.active .icon-close {
+      display: block;
+      position: absolute;
+      top: 3px;
+      right: 10px;
+      color:#444;
+      font-size: 25px;
+	  width:40px;
+      background-color: #f5f5f5;
+      border-radius: 10%; 
+      padding: 5px;  
+    }
+
+	    /* update------------------------ */
+	
+    body {
+		font-family: Arial, sans-serif;
+		padding: 0;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh; /* Set the minimum height of the body to at least the full viewport height */
+position:relative; 
+z-index:-1;
+    }
+
+    /* Header styles */
+    header {
+      color: black;
+      padding: 5px;
+      text-align: center;
+	  border-bottom: 2px solid #fde6e6;
+    }
+
+    
+
+	/*************************************************************main search***************************/
+
+			
+
+			/* Styles for the search container */
+			.search-container {
+			  display: flex;
+			  flex-wrap: wrap; /* Wrap the search box and filter button in a row on small screens */
+			  align-items: center;
+			  margin-bottom: 20px;
+			}
+
+			.search-container .search-box {
+			  display: flex;
+			  align-items: center;
+			  margin-bottom: 10px;
+			}
+
+			
+
+			.search-container button#search-btn {
+			  padding: 17.5px;
+			  border: 2px solid black;
+			  border-radius: 0 20px 20px 0; /* No border radius on the right side */
+			  border-left: none;
+			  background-color: #ffffff;
+			  color: black;
+			  transition: background-color 0.1s, color 0.5s;
+			  }
+
+		.search-container input[type="text"]:focus + button#search-btn {
+			  background-color: #000; /* Change button background to black */
+			  color: #fff; /* Change button text color to white */
+			  border: 3px solid black;
+}
+			.search-container button#search-btn:hover {
+			cursor: pointer; /* Change the cursor to a pointer (hand) */
+			background-color: rgba(0, 0, 0, 0.1); /* Transparent black background color */
+			/* Other CSS properties for hover effect */
+}
+	
+
+			/* Styles for the filter button */
+#filter-btn {
+  background-color: #2E6BFF; /* Change to a lighter blue shade for hover effect */
+  color: #ffffff;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#filter-btn:hover {
+  transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+
+
+			
+			
+
+			/* Styles for Font Awesome icons (assuming you have included Font Awesome) */
+			i.fas {
+			  margin-right: 5px;
+			}
+
+			/* Styles for product and premium containers */
+			.container {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: center;
+			}
+
+			.products-container, .premium-container {
+			  display: flex;
+			  flex-wrap: wrap;
+			  border-radius: 5px;
+			  padding: 10px;
+			  width:100%;
+			  margin-bottom: 20px; /* Add margin between the containers */
+			}
+/* ---------------------------------------------- */
+
+
+.premium-container {
+  transition: height 0.5s;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.premium-container:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+/* Scrollbar Styles (for overflow-y: auto) */
+.element::-webkit-scrollbar {
+  width: 6px;
+}
+
+.premium-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.premium-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.premium-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  .premium-container {
+    width: 90%;
+    margin: 0 auto;
+    top: 10%;
+    right: 5%;
+  }
+}
+
+/* ---------------------------------------------- */
+			
+			
+			.premium-container {
+			  border: 1px solid #ccc; /* Add border to the container */
+}
+		
+		
+			
+			/* Main section styles */
+				main {
+				  flex: 1; /* Allow the main section to take up the remaining vertical space */
+				  width: 80%; /* Set the width of the main section */
+				  margin: 0 auto; /* Center the main section horizontally */
+				  padding: 20px;
+				  display: flex;
+				  flex-direction: column;
+				  /* align-items: center; */
+				  overflow: auto; /* Enable scrolling for overflowing content */
+				}
+
+
+	/* Media query for laptop layout */
+	@media (min-width: 768px) {
+		 .publish-button {
+				order: 1; /* Change the order to 1 to place it to the right */
+				margin-left: 20px; /* Add some margin between the elements */
+			}
+						  /* Main section styles */
+			main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+.publish-button {
+    background-color: #0045ec;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.publish-button{
+    color: white !important;
+}
+.publish-button:hover{
+color:#2E6BFF !important;
+}
+
+.menu li a {
+    display: block;
+    color: #111111;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+			  .container {
+				width: 100%; /* Take full width of the main section */
+				margin-left: 0; /* Reset margin for the container */
+				padding: 0;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			  }
+
+			  .products-container {
+				width: 60%; /* Limit the width of products-container */
+				margin-right: 10%; /* Reset margin for the products-container */
+				margin-bottom: 20px; /* Add margin between the containers */
+				gap: 10px;
+
+			  }
+
+				.premium-container {
+    transition: height 0.5s;
+    width: 15%;
+    padding: 10px;
+    margin-left: 10%;
+    position: fixed;
+    top: 19.2%;
+    right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: auto;
+    height: 70%;
+  }
+
+						
+											
+				}
+
+
+
+	
+	/*********************************** affichage annance ***************************/
+
+.search-container input[type="text"] {
+  width: 1000px;
+}
+@media (max-width: 1024px) {
+  .search-container input[type="text"] {
+    width: 100%; /* Make it 100% of the available width */
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  }
+}
+
+	 /* Media query for mobile devices */
+    @media screen and (max-width: 767px) {
+		
+			  .menu li.welcome {
+				order: 3; /* Change the order to 3 to place it below Bienvenue */
+			  }
+			  
+			  .publish-button {
+				order: 4; /* Change the order to 4 to place it below Bienvenue */
+			  }
+
+		
+		main {
+				display: flex;
+				padding: 20px;
+				width: 89%;  
+				}
+				
+				
+			.search-container button#search-btn {
+			  padding: 10px;
+			  border: 2px solid black;
+			  border-radius: 0 20px 20px 0; /* No border radius on the right side */
+			  border-left: none;
+			  background-color: #ffffff;
+
+			}
+			.search-container button#search-btn:hover {
+			cursor: pointer; /* Change the cursor to a pointer (hand) */
+			background-color: rgba(0, 0, 0, 0.1); /* Transparent black background color */
+			/* Other CSS properties for hover effect */
+}
+
+	.search-container input[type="text"] {
+			    padding: 10px;
+				border: 2px solid black;
+				border-radius: 40px 0px 0px 40px;
+				min-width: 250px; /* Make it 100% of the available width */
+				max-width: 250px; /* Ensure it doesn't exceed the screen width */
+				height: 15px;
+				border-right: none;
+			  
+			}
+	
+			
+		
+		.products-container {
+				width:100%;
+				position: static; /* Reset position to static to remove fixed positioning */
+				min-height:50vh;
+ 				
+			  }
+		.premium-container {
+				width:100%;
+				order: -1; /* Set the order to -1 to place it above the products-container */
+				position: static; /* Reset position to static to remove fixed positioning */
+				height:20vh;
+				right: 10%;
+				display: flex; /* Use flex display to align images vertically */
+				flex-direction: column; /* Align images vertically */
+				align-items: center; 
+				overflow-x: hidden; /* Hide horizontal scrollbar */
+				height: auto; /* Reset height for mobile devices */
+}
+
+
+		
+	
+	container {
+    flex-direction: column; /* Change the flex-direction to column on mobile */
+  }
+      /* Show the hamburger button and hide the regular menu */
+      .menu {
+        left: -250px;
+      }
+
+      .hamburger {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        padding: 10px;
+        background-color: #3140AF;
+        color: #fff;
+      }
+
+		
+
+      .hamburger.active .icon-close {
+        display: block;
+      }
+
+
+      .hamburger:hover {
+        background-color: #555;
+      }
+
+      /* Show the menu when the hamburger button is clicked */
+      .hamburger.active ~ .menu {
+        left: 0;
+      }
+	  
+
+.publish-button {
+	background-color: #0045ec !important;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.publish-button{
+    color: white !important;
+ 
+}
+.publish-button:hover{
+color:#2E6BFF !important;
+}
+
+	  .menu li a{
+		background-color: black; /* Change the background color on hover */
+		color:white;
+		border-radius: 5px; /* Add rounded corners for a nicer look */
+			}
+	  /*nav a {
+		background:white;
+		color: white;
+		}*/
+		  .menu {
+		  display:block;
+		  background-color: rgba(0, 0, 0, 0.7); /* Set the background color to black with 50% opacity (alpha 0.5) */
+		  position: fixed;
+		  top: 0;
+		  left: -250px;
+		  width: 250px;
+		  height: 100%;
+		  padding-top: 60px;
+		  transition: left 0.3s ease;
+		}
+	/* Display the list items horizontally */
+		.menu li {
+		  display: block;
+		  margin-right: 20px; 
+		  /* Add some space between the items */
+		}
+			
+    }
+
+	.product, .premium {
+			width: 285.34px; 
+			height: 340px; 		 
+			margin:auto;
+			margin-bottom:12px;
+			border: 1px solid #ccc;
+			border-radius: 20px;
+			}
+.container img {
+	max-width: 100%; /* Make sure the image doesn't exceed its container's width */
+  height: auto;    /* Maintain the image's aspect ratio */
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Media query for laptops and larger screens */
+@media (min-width: 768px) {
+	.search-container input[type="text"] {
+			    padding: 10px;
+				border: 2px solid black;
+				border-radius: 40px 0px 0px 40px;
+				min-width: 800px;
+				max-width: 1000px;
+				height: 30px;
+				border-right: none;
+			  
+			}
+	
+			
+  .product img {
+			width: 285.34px; 
+			height: 226.45px; 
+			border-radius: 20px;
+			max-width: 100%;
+			max-height: 100%;
+  }
+.products-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px; /* This adds a 10-pixel gap between flex items (i.e., .product divs) */
+	}
+ 
+.premium img {
+			width: 285.34px; 
+			height: 226.45px; 
+			border-radius: 20px;
+			max-width: 100%;
+			max-height: 100%;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+ .product img {
+			width: 285.34px; 
+			height: 226.45px; 
+			border-radius: 20px;
+			max-width: 100%;
+			max-height: 100%;
+  }
+.products-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px; /* This adds a 10-pixel gap between flex items (i.e., .product divs) */
+	}
+ 
+.premium img {
+		width: 285.34px; 
+			height: 226.45px; 
+			border-radius: 20px;
+			max-width: 100%;
+			max-height: 100%;
+  }
+}
+
+/*premium *************/
+
+
+
+.premium-image {
+  position: relative;
+  z-index: -1; /* Ensure the overlay is on top of other content */
+
+}
+
+.premium-badge {
+  position: absolute;
+  bottom: 10px; /* Adjust the position as needed */
+  left: 10px; /* Adjust the position as needed */
+  background-color: black; 
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners for the badge */
+  font-weight: bold;
+  color:#FFD700;
+  text-shadow: 0 0 0 black, 0 0 5px black; /* Add a text shadow to the star for styling */
+}
+
+.star {
+  color: #FFD700; /* Color of the star */
+  font-size: 1.2em; /* Adjust the size of the star */
+  margin-right: 5px; /* Add spacing between the star and text */
+  text-shadow: 0 0 0 black, 0 0 5px black; /* Add a text shadow to the star for styling */
+}
+/* ------------------------------------------------- pagination */
+/* Pagination styles */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #2E6BFF;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the active page link */
+.pagination .active-page {
+    background-color: #0056b3;
+	border: 1px solid #ccc;
+    font-weight: bold;
+	color:#fff
+}
+/* -------------------------------------------------------------------go to the top  */
+
+/* Scroll to Top Button styles */
+#scrollToTopBtn {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.6); /* Set the background color to 50% transparent blue */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex; /* Use flexbox to center the icon */
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+}
+
+#scrollToTopBtn i {
+    font-size: 20px; /* Adjust the icon size as needed */
+}
+/* --------------------------------------------------- logo ----------------------- */
+.logo {
+            font-family: 'Arial', sans-serif; /* Choose your preferred font-family */
+            color: #FF5733; /* Default text color */
+        }
+
+        /* Apply different styles to each character */
+        .char1 {
+            font-size: 30px;
+            color: red; /* Change color for the first character */
+        }
+
+        .char2 {
+            font-size: 25px;
+            color: #0045ec ; /* Change color for the second character */
+        }
+
+        .char3 {
+            font-size: 20px;
+            color: orange; /* Change color for the third character */
+        }
+        .char4 {
+            font-size: 24px;
+            color: green; /* Change color for the third character */
+        }
+        .char5 {
+            font-size: 28px;
+            color: red; /* Change color for the third character */
+        }
+        .char6 {
+            font-size: 25px;
+            color: #0045ec ; /* Change color for the third character */
+        }
+        .char7 {
+            font-size: 28px;
+            color: orange; /* Change color for the third character */
+        }
+        .char8 {
+            font-size: 22px;
+            color: green; /* Change color for the third character */
+        }
+
+
+/* Remove default link styles for <a> within .product and .premium a */
+.product a,
+.premium a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
+/* Add a subtle shadow and zoom effect on hover */
+.product:hover,
+.premium:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: scale(1.05); /* Slightly zoom in on hover */
+    transition: box-shadow 0.1s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+
+	/********************************************Footer styles *******************************/
+	footer {
+	width: 100%;  
+    background-color: #3140AF;
+	/* background-image: url('../wood.png'); /* Use the relative path to your image */ */
+    /* background-size: cover; */
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  text-align: center; /* Center-align the content */
+position:relative; 
+z-index:-1;
+ }
+/* Footer Styles */
+
+/* Base Footer Styles */
+
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust to your preferred maximum width */
+}
+
+/* Footer Sections */
+.footer-section {
+  flex-basis: calc(25% - 20px); /* Adjust column width as needed */
+  margin: 0 10px;
+  text-align: left;
+}
+
+/* Footer Section Headings */
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Footer Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6600; /* Link color on hover */
+}
+
+/* Footer Social Icons */
+.footer-social {
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff; /* Social icon color */
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #ff6600; /* Social icon color on hover */
+}
+
+/* Footer Legal Notice */
+.footer-legal {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+
+/* Tablet (iPad) Styles */
+@media (max-width: 768px) {
+  .footer-section {
+    flex-basis: calc(33.33% - 20px); /* Adjust column width for tablets */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .footer-section {
+    flex-basis: 100%; /* Full width for mobile */
+    margin-bottom: 20px;
+  }
+  .footer-section h3 {
+    font-size: 16px; /* Smaller heading size for mobile */
+  }
+  .footer-legal {
+    font-size: 12px; /* Smaller font size for legal notice on mobile */
+  }
+}
