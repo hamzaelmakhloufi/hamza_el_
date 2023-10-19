@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/css.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/js.js"></script>
+  <style>
+  /* Add your existing CSS styles here */
+
+  /* Styles for the login section */
+  #login {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+
+  #login h2 {
+    margin-bottom: 10px;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  p a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+
+  /* Media query for mobile devices */
+  @media screen and (max-width: 767px) {
+    #login {
+      padding: 10px;
+    }
+
+    #login h2 {
+      font-size: 24px;
+    }
+
+    input {
+      font-size: 14px;
+    }
+
+    button {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  /* Media query for laptops and larger screens */
+  @media screen and (min-width: 768px) {
+    #login {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    #login h2 {
+      font-size: 32px;
+    }
+
+    input {
+      font-size: 16px;
+    }
+
+    button {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+</style>
+
+</head>
+<body>
+<header>
+  <!-- Hamburger menu button for mobile -->
+  <div class="hamburger">
+    <!-- <div class="icon-close">✗</div> -->
+    <div class="icon-open">&#9776;</div>
+  </div>
+  <!-- Navigation menu -->
+  <nav class="menu">
+    <ul>
+      <li>
+        <div class="logo">
+          <span class="char1">E</span>
+          <span class="char2">M</span>
+          <span class="char3">I</span>
+          <span class="char4">N</span>
+          <span class="char5">S</span>
+          <span class="char6">T</span>
+          <span class="char7">R</span>
+          <span class="char8">U</span>
+        </div>
+      </li>
+      <li class="welcome"> Bienvenue </li>
+      <li class="login-link"><a href="connecter.html"><i class="fas fa-sign-in-alt"></i> Se connecter</a></li>
+      <li class="logout-link" style="display: none;"><a href="../test.html"><i class="fas fa-sign-in-alt"></i> Se déconnecter</a></li>
+      <li><a href="../test.html"><i class="fas fa-home"></i> Accueil</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> À propos</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li class="account"><a href="myaccount.html"><i class="fas fa-user"></i> Mon compte</a></li>
+      <li class="publish-annonce"><a href="annance.html" class="publish-button" > <i class="fas fa-plus-circle"></i> Publier une annonce</a></li>
+    </ul>
+  </nav>
+</header>
+  
+<main>
+    <section id="login">
+      <h2>Connectez-vous à Votre Compte</h2>
+      <form action="#" method="post">
+        <label for="username">Nom d'Utilisateur :</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Mot de Passe :</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Connexion</button>
+      </form>
+      <p>Vous n'avez pas de compte ? <a href="create_account.html">Créez un</a></p>
+    </section>
+  </main>
+
+  
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Explorez les Instruments</h3>
+      <ul>
+        <li><a href="#">Guitares</a></li>
+        <li><a href="#">Violons</a></li>
+        <li><a href="#">Pianos</a></li>
+        <li><a href="#">Batteries</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Vendre Vos Instruments</h3>
+      <ul>
+        <li><a href="annance.html">Ajouter un Instrument</a></li>
+        <li><a href="Conseils.html">Conseils pour les Vendeurs</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>À Propos de Notre Place de Marché Musicale</h3>
+      <ul>
+        <li><a href="about.html">À Propos de Nous</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Informations Légales</h3>
+      <ul>
+        <li><a href="Confidentialite.html">Politique de Confidentialité</a></li>
+        <li><a href="Conditions.html">Conditions Générales</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-social">
+    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+  </div>
+  <div class="footer-legal">
+    &copy; 2023 Votre Place de Marché Musicale. Tous droits réservés.
+  </div>
+</footer>
+</body>
+</html>

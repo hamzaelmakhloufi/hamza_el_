@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/css.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/js.js"></script>
+  
+  <style>
+        /* CSS for basic styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        main {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-images {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-image {
+            width: 100%;
+            max-width: 300px;
+        }
+        .product-details {
+            margin-top: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .product-description {
+            margin-top: 10px;
+        }
+        .icons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+  <!-- Hamburger menu button for mobile -->
+  <div class="hamburger">
+    <!-- <div class="icon-close">✗</div> -->
+    <div class="icon-open">☰</div>
+  </div>
+  <!-- Navigation menu -->
+  <nav class="menu">
+    <ul>
+      <li>
+        <div class="logo">
+          <span class="char1">E</span>
+          <span class="char2">M</span>
+          <span class="char3">I</span>
+          <span class="char4">N</span>
+          <span class="char5">S</span>
+          <span class="char6">T</span>
+          <span class="char7">R</span>
+          <span class="char8">U</span>
+        </div>
+      </li>
+      <li class="welcome"> Bienvenue </li>
+      <li class="login-link" style="display: none;"><a href="#login"><i class="fas fa-sign-in-alt"></i> Se connecter</a></li>
+      <li class="logout-link" style=""><a href="#login"><i class="fas fa-sign-in-alt"></i> Se déconnecter</a></li>
+      <li><a href="../test.html"><i class="fas fa-home"></i> Accueil</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> À propos</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li class="account"><a href="myaccount.html"><i class="fas fa-user"></i> Mon compte</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+        <div class="product-images">
+            <button id="prev-image">&lt;</button>
+            <img class="product-image" id="product-image" src="C:\Users\h.elmakloufi\Desktop\tst\url_de_l_image_3.JPG" alt="Product Image 1">
+            <button id="next-image">&gt;</button>
+        </div>
+        <div class="product-details">
+            <div class="product-title">Product Title</div>
+            <div class="product-description">
+                Product description goes here. Add details about the product.
+            </div>
+            <div class="icons">
+                <a href="https://wa.me/your_whatsapp_number" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+                <a href="tel:your_telephone_number"><img src="telephone-icon.png" alt="Telephone"></a>
+            </div>
+        </div>
+    </main>
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Explorez les Instruments</h3>
+      <ul>
+        <li><a href="#">Guitares</a></li>
+        <li><a href="#">Violons</a></li>
+        <li><a href="#">Pianos</a></li>
+        <li><a href="#">Batteries</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Vendre Vos Instruments</h3>
+      <ul>
+        <li><a href="annance.html">Ajouter un Instrument</a></li>
+        <li><a href="Conseils.html">Conseils pour les Vendeurs</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>À Propos de Notre Place de Marché Musicale</h3>
+      <ul>
+        <li><a href="about.html">À Propos de Nous</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Informations Légales</h3>
+      <ul>
+        <li><a href="Confidentialite.html">Politique de Confidentialité</a></li>
+        <li><a href="Conditions.html">Conditions Générales</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-social">
+    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+  </div>
+  <div class="footer-legal">
+    &copy; 2023 Votre Place de Marché Musicale. Tous droits réservés.
+  </div>
+</footer>
+   <script>
+        // JavaScript to handle image navigation
+        const imageUrls = [
+            "C:/Users/h.elmakloufi/Desktop/tst/url_de_l_image_1.jpg",
+            "C:/Users/h.elmakloufi/Desktop/tst/url_de_l_image_2.jpg",
+            "C:/Users/h.elmakloufi/Desktop/tst/url_de_l_image_3.jpg"
+        ];
+        let currentImageIndex = 0;
+        const prevButton = document.getElementById("prev-image");
+        const nextButton = document.getElementById("next-image");
+        const productImage = document.getElementById("product-image");
+
+        prevButton.addEventListener("click", () => {
+            currentImageIndex = (currentImageIndex - 1 + imageUrls.length) % imageUrls.length;
+            productImage.src = imageUrls[currentImageIndex];
+        });
+
+        nextButton.addEventListener("click", () => {
+            currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+            productImage.src = imageUrls[currentImageIndex];
+        });
+    </script>
+
+</body>
+</html>
